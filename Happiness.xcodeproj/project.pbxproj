@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5115C0411C3972350016B34A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5115C0401C3972350016B34A /* Main.storyboard */; };
+		5115C0431C3972910016B34A /* HappinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115C0421C3972910016B34A /* HappinessViewController.swift */; };
+		5115C0451C3973940016B34A /* FacView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115C0441C3973940016B34A /* FacView.swift */; };
 		5169B1361C39719C0073D35D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5169B1351C39719C0073D35D /* AppDelegate.swift */; };
-		5169B1381C39719C0073D35D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5169B1371C39719C0073D35D /* ViewController.swift */; };
-		5169B13B1C39719C0073D35D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5169B1391C39719C0073D35D /* Main.storyboard */; };
 		5169B13D1C39719C0073D35D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5169B13C1C39719C0073D35D /* Assets.xcassets */; };
 		5169B1401C39719C0073D35D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5169B13E1C39719C0073D35D /* LaunchScreen.storyboard */; };
 		5169B14B1C39719C0073D35D /* HappinessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5169B14A1C39719C0073D35D /* HappinessTests.swift */; };
@@ -34,10 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5115C0401C3972350016B34A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5115C0421C3972910016B34A /* HappinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappinessViewController.swift; sourceTree = "<group>"; };
+		5115C0441C3973940016B34A /* FacView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacView.swift; sourceTree = "<group>"; };
 		5169B1321C39719C0073D35D /* Happiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Happiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5169B1351C39719C0073D35D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5169B1371C39719C0073D35D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5169B13A1C39719C0073D35D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5169B13C1C39719C0073D35D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5169B13F1C39719C0073D35D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5169B1411C39719C0073D35D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,12 +99,10 @@
 		5169B1341C39719C0073D35D /* Happiness */ = {
 			isa = PBXGroup;
 			children = (
-				5169B1351C39719C0073D35D /* AppDelegate.swift */,
-				5169B1371C39719C0073D35D /* ViewController.swift */,
-				5169B1391C39719C0073D35D /* Main.storyboard */,
-				5169B13C1C39719C0073D35D /* Assets.xcassets */,
-				5169B13E1C39719C0073D35D /* LaunchScreen.storyboard */,
-				5169B1411C39719C0073D35D /* Info.plist */,
+				5115C0421C3972910016B34A /* HappinessViewController.swift */,
+				5115C0401C3972350016B34A /* Main.storyboard */,
+				5115C0441C3973940016B34A /* FacView.swift */,
+				5169B1631C3971BD0073D35D /* Stuff */,
 			);
 			path = Happiness;
 			sourceTree = "<group>";
@@ -123,6 +123,17 @@
 				5169B1571C39719C0073D35D /* Info.plist */,
 			);
 			path = HappinessUITests;
+			sourceTree = "<group>";
+		};
+		5169B1631C3971BD0073D35D /* Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				5169B1351C39719C0073D35D /* AppDelegate.swift */,
+				5169B13C1C39719C0073D35D /* Assets.xcassets */,
+				5169B13E1C39719C0073D35D /* LaunchScreen.storyboard */,
+				5169B1411C39719C0073D35D /* Info.plist */,
+			);
+			name = Stuff;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +242,7 @@
 			files = (
 				5169B1401C39719C0073D35D /* LaunchScreen.storyboard in Resources */,
 				5169B13D1C39719C0073D35D /* Assets.xcassets in Resources */,
-				5169B13B1C39719C0073D35D /* Main.storyboard in Resources */,
+				5115C0411C3972350016B34A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5169B1381C39719C0073D35D /* ViewController.swift in Sources */,
+				5115C0431C3972910016B34A /* HappinessViewController.swift in Sources */,
 				5169B1361C39719C0073D35D /* AppDelegate.swift in Sources */,
+				5115C0451C3973940016B34A /* FacView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +305,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5169B1391C39719C0073D35D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5169B13A1C39719C0073D35D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5169B13E1C39719C0073D35D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -484,6 +488,7 @@
 				5169B15C1C39719C0073D35D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5169B15D1C39719C0073D35D /* Build configuration list for PBXNativeTarget "HappinessTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +497,7 @@
 				5169B15F1C39719C0073D35D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5169B1601C39719C0073D35D /* Build configuration list for PBXNativeTarget "HappinessUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +506,7 @@
 				5169B1621C39719C0073D35D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
