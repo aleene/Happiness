@@ -8,12 +8,17 @@
 
 import UIKit
 
+@IBDesignable
+
 class FacView: UIView {
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     
+    @IBInspectable
     var lineWidth: CGFloat = 3 { didSet {setNeedsDisplay() } }
+    @IBInspectable
     var color: UIColor = UIColor.blueColor() { didSet {setNeedsDisplay() } }
+    @IBInspectable
     var scale: CGFloat = 0.9
     
     var faceCenter: CGPoint {
