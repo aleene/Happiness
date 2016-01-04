@@ -15,6 +15,7 @@
 		5169B1401C39719C0073D35D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5169B13E1C39719C0073D35D /* LaunchScreen.storyboard */; };
 		5169B14B1C39719C0073D35D /* HappinessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5169B14A1C39719C0073D35D /* HappinessTests.swift */; };
 		5169B1561C39719C0073D35D /* HappinessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5169B1551C39719C0073D35D /* HappinessUITests.swift */; };
+		51ADFC431C3AC25300F2E5A7 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 51ADFC421C3AC25300F2E5A7 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5169B1511C39719C0073D35D /* HappinessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappinessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5169B1551C39719C0073D35D /* HappinessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappinessUITests.swift; sourceTree = "<group>"; };
 		5169B1571C39719C0073D35D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51ADFC421C3AC25300F2E5A7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				5115C0421C3972910016B34A /* HappinessViewController.swift */,
+				51ADFC421C3AC25300F2E5A7 /* README.md */,
 				5115C0401C3972350016B34A /* Main.storyboard */,
 				5115C0441C3973940016B34A /* FacView.swift */,
 				5169B1631C3971BD0073D35D /* Stuff */,
@@ -269,6 +272,7 @@
 			files = (
 				5115C0431C3972910016B34A /* HappinessViewController.swift in Sources */,
 				5169B1361C39719C0073D35D /* AppDelegate.swift in Sources */,
+				51ADFC431C3AC25300F2E5A7 /* README.md in Sources */,
 				5115C0451C3973940016B34A /* FacView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
