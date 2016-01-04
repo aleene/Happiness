@@ -15,7 +15,6 @@
 		5169B1401C39719C0073D35D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5169B13E1C39719C0073D35D /* LaunchScreen.storyboard */; };
 		5169B14B1C39719C0073D35D /* HappinessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5169B14A1C39719C0073D35D /* HappinessTests.swift */; };
 		5169B1561C39719C0073D35D /* HappinessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5169B1551C39719C0073D35D /* HappinessUITests.swift */; };
-		51ADFC431C3AC25300F2E5A7 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 51ADFC421C3AC25300F2E5A7 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -272,7 +271,6 @@
 			files = (
 				5115C0431C3972910016B34A /* HappinessViewController.swift in Sources */,
 				5169B1361C39719C0073D35D /* AppDelegate.swift in Sources */,
-				51ADFC431C3AC25300F2E5A7 /* README.md in Sources */,
 				5115C0451C3973940016B34A /* FacView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

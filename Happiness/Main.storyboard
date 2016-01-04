@@ -41,6 +41,9 @@
                             <constraint firstItem="hAC-4F-yXi" firstAttribute="leading" secondItem="eTi-CJ-70I" secondAttribute="leading" id="tsb-EB-tdA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="faceView" destination="hAC-4F-yXi" id="gYX-VB-prx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cqs-OZ-JCI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

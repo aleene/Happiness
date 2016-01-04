@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol FaceViewDataSource: class {
+    func smilinesForFaceView(sender: FacView) -> Double?
+}
+
 @IBDesignable
 
 class FacView: UIView {
@@ -28,6 +32,9 @@ class FacView: UIView {
     var faceRadius: CGFloat {
         return min(bounds.size.width, bounds.size.height)/2 * scale
     }
+    
+    // add weak for delegations
+    weak var dataSource: FaceViewDataSource?
     
     private struct Scaling {
         static let FaceRadiusToEyeRadiusRatio: CGFloat = 10
@@ -86,7 +93,8 @@ class FacView: UIView {
         bezierPathForEye(.Left).stroke()
         bezierPathForEye(.Right).stroke()
         
-        let smiliness = 0.5
+        // if the datasource is nil then use 0.0 else the smiliness found in the datasource
+        let smiliness = dataSource?.smilinesForFaceView(self) ?? 0.0
         let smilePath = bezierPathForSmile(smiliness)
         smilePath.stroke()
     }
