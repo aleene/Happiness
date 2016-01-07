@@ -1,5 +1,5 @@
 //
-//  FacView.swift
+//  FaceView.swift
 //  Happiness
 //
 //  Created by arnaud on 03/01/16.
@@ -9,21 +9,21 @@
 import UIKit
 
 protocol FaceViewDataSource: class {
-    func smilinesForFaceView(sender: FacView) -> Double?
+    func smilinesForFaceView(sender: FaceView) -> Double?
 }
 
-@IBDesignable
+// @IBDesignable
 
-class FacView: UIView {
+class FaceView: UIView {
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     
-    @IBInspectable
-    var lineWidth: CGFloat = 3 { didSet {setNeedsDisplay() } }
-    @IBInspectable
+    //@IBInspectable
+    var lineWidth: CGFloat = 1 { didSet {setNeedsDisplay() } }
+    //@IBInspectable
     var color: UIColor = UIColor.blueColor() { didSet {setNeedsDisplay() } }
-    @IBInspectable
-    var scale: CGFloat = 0.9
+    //@IBInspectable
+    var scale: CGFloat = 0.8
     
     var faceCenter: CGPoint {
         return convertPoint(center, fromView: superview)
@@ -35,6 +35,14 @@ class FacView: UIView {
     
     // add weak for delegations
     weak var dataSource: FaceViewDataSource?
+    
+    func scale(gesture: UIPinchGestureRecognizer) {
+        if gesture.state == .Changed {
+            scale *= gesture.scale
+            // reset scale
+            gesture.scale = 1
+        }
+    }
     
     private struct Scaling {
         static let FaceRadiusToEyeRadiusRatio: CGFloat = 10

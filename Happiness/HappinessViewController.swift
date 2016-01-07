@@ -10,10 +10,31 @@ import UIKit
 
 class HappinessViewController: UIViewController, FaceViewDataSource {
 
-    @IBOutlet weak var faceView: FacView! {
+    @IBOutlet weak var faceView: FaceView! {
         didSet {
             // tell the FaceView that HapinessViewController will be its datasource
             faceView.dataSource = self
+            // the pinch is a View element only, so the faceview can handle it
+            // you need to add an argument to scale as it takes an argument
+            faceView.addGestureRecognizer(UIPinchGestureRecognizer(target: faceView, action: "scale:"))
+        }
+    }
+    
+    private struct Constants {
+        static let HappinessGestureScale: CGFloat = 4
+    }
+    
+    @IBAction func changeHappiness(gesture: UIPanGestureRecognizer) {
+        switch gesture.state {
+        case .Ended: fallthrough
+        case .Changed:
+            let translation = gesture.translationInView(faceView)
+            let happinessChange = -Int(translation.y / Constants.HappinessGestureScale)
+            if happinessChange != 0 {
+                happiness += happinessChange
+                gesture.setTranslation(CGPointZero, inView: faceView)
+            }
+        default: break
         }
     }
     
@@ -30,7 +51,7 @@ class HappinessViewController: UIViewController, FaceViewDataSource {
         faceView.setNeedsDisplay()
     }
     
-    func smilinesForFaceView(sender: FacView) -> Double? {
+    func smilinesForFaceView(sender: FaceView) -> Double? {
         // interpret model for the view
         return Double(happiness-50)/50
     }
